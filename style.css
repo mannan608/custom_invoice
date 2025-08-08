@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+html,
+body {
+  background: white;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.invoice-container {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 10mm;
+  margin: auto;
+  background: #fff;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; */
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  margin: 0;
+  color: #510000;
+  font-size: 22px;
+}
+
+.header p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.office-box {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-top: 10px;
+  gap: 48px;
+}
+
+.from-to-address,
+.to-address-address {
+  padding: 14px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  span {
+    font-size: 13px;
+  }
+}
+.bill-info {
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+td,
+th {
+  border: 1px solid #000;
+  padding: 8px;
+  text-align: left;
+}
+
+.from-to {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.from-to div {
+  width: 48%;
+  border: 1px solid #000;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.footer {
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+.footer .left {
+  float: left;
+}
+
+.footer .right {
+  float: right;
+}
+
+tbody .invoice-row {
+  height: calc(100vh - 55vh);
+}
+
+.border-0 {
+  border: none !important;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  .invoice-container,
+  .invoice-container * {
+    visibility: visible;
+  }
+
+  .invoice-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 5mm;
+    /* padding-right: 14px; */
+  }
+  @page {
+    margin: 0.25in !important;
+  }
+}
