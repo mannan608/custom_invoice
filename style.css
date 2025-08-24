@@ -1,29 +1,35 @@
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
-
-/* @font-face {
-    font-family: 'TimeNewRoman';
-    src: url('./fonts/newroman.ttf') format('truetype');
-} */
-
-/* .font-time-new-roman {
-  font-family: "TimeNewRoman", serif;
+@import url("https://fonts.googleapis.com/css2?family=Italianno&display=swap");
+@font-face {
+  font-family: "TimesNewRoman";
+  src: url("/fonts/times.ttf") format("truetype");
 }
-.font-lucida {
-  font-family: "Lucida Console", monospace;
+
+@font-face {
+  font-family: "Algerian";
+  src: url("/fonts/ALGERIAN.TTF") format("truetype");
 }
+
+@font-face {
+  font-family: "Engravers";
+  src: url("/fonts/ENGRAVERS.TTF") format("truetype");
+}
+
+.font-times {
+  font-family: "TimesNewRoman", serif;
+  font-weight: 500;
+}
+
 .font-algerian {
-  font-family: "Algerian", serif;
+  font-family: "Algerian", cursive;
 }
+
 .font-engravers {
-  font-family: "Engravers MT", serif;
+  font-family: "Engravers", sans-serif;
 }
-.font-mongolian {
-  font-family: "Mongolian Baiti", serif;
+
+.font-lucida {
+  font-family: "Italianno", cursive;
 }
-.font-arial {
-  font-family: "Mongolian Baiti", serif;
-}   
-*/
 
 html,
 body {
@@ -64,7 +70,8 @@ a {
 
 .header p {
   margin: 4px 0;
-  font-size: 14px;
+  line-height: 24px;
+  font-size: 28px;
 }
 
 .office-box {
@@ -133,7 +140,7 @@ th {
 }
 
 tbody .invoice-row {
-  height: calc(100vh - 55vh);
+  height: calc(100vh - 56vh);
 }
 
 .border-0 {
@@ -159,5 +166,20 @@ tbody .invoice-row {
   }
   @page {
     margin: 0.25in !important;
+  }
+}
+.font-18 {
+  font-size: 18px !important;
+}
+
+.office-box {
+  .font-times {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+.bill-info {
+  .font-times {
+    font-size: 20px !important;
   }
 }
